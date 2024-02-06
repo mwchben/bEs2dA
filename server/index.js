@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+var cors = require("cors");
 
 // IMPORT MODELS
 require("./models/sampleModel");
@@ -11,6 +12,7 @@ const uri = process.env.DB_URL;
 console.log(uri);
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 //IMPORT ROUTES
 require("./routes/sampleRoute")(app);
