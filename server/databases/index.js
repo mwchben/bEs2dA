@@ -1,6 +1,9 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const uri =
-  "mongodb+srv://mwchben:HMBTOtgCNUzhSeNB@attempt.xqjclyc.mongodb.net/?retryWrites=true&w=majority";
+
+require("dotenv").config({
+  path: "../.env",
+});
+const uri = process.env.DB_URL;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -18,6 +21,8 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
+  } catch (e) {
+    console.error(e);
   } finally {
     await client.close();
   }
