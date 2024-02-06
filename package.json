@@ -2,6 +2,7 @@
   "name": "bes2da",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://mwchben.github.io/bEs2dA/",
   "proxy": "http://127.0.0.1:4000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

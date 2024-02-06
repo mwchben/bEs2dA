@@ -9,4 +9,4 @@ bE(backEnd) s(Server ) 2 dA(deployedApplication)
 
 ### `Deployed?`
 
-The application will run in the [GitHub Page for the repo](http://localhost:3000); to view it in your browser.
+The application will run on [GitHub Pages](https://mwchben.github.io/bEs2dA/); to view it in your browser.
