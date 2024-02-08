@@ -1,9 +1,9 @@
-const mongoose = require("mongoose");
-const { Schema } = mongoose;
+// const mongoose = require("mongoose");
+// const { Schema } = mongoose;
 
-const sampleSchema = new mongoose.Schema({
-  name: String,
-  description: String,
-});
+// const sampleSchema = new mongoose.Schema({
+//   name: String,
+//   description: String,
+// });
 
-mongoose.model("sample", sampleSchema);
+// mongoose.model("sample", sampleSchema);

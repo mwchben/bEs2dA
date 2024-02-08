@@ -4,7 +4,8 @@ const bodyParser = require("body-parser");
 var cors = require("cors");
 
 // IMPORT MODELS
-require("./models/sampleModel");
+// require("./models/sampleModel");
+require("./models/airBNBModel");
 
 require("dotenv").config();
 
@@ -15,7 +16,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //IMPORT ROUTES
-require("./routes/sampleRoute")(app);
+// require("./routes/sampleRoute")(app);
+require("./routes/airBNBRoute")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
